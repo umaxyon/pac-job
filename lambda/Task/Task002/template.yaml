@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Task002 ツイート本文の解析
+Resources:
+  Task002:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: Task002.task002_handler
+      Runtime: python3.6
+      Role: arn:aws:iam::007575903924:role/cloud9-Job001-Job001Role-NQ27F73FEWTL
+      MemorySize: 256
+      Timeout: 240

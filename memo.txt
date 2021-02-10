@@ -1,0 +1,8 @@
+[DynamoDB local]
+cd wk/ws_pacpac/dynamodb_local_latest/
+java -Djava.library.path=./DynamoDBLocal_lib -jar DynamoDBLocal.jar -sharedDb -port 8001
+http://localhost:8001/shell/
+
+
+sam package --template-file template.yaml --s3-bucket s3://kabupac.system/lambda_dev --output-template-file package.yaml
+sam deploy --template-file package.yaml --stack-name SAM-Sample --capabilities CAPABILITY_IAM

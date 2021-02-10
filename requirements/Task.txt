@@ -1,0 +1,5 @@
+emoji==0.4.5
+pytz==2018.3
+more-itertools==4.1.0
+requests-oauthlib==0.8.0
+logutils==0.3.5

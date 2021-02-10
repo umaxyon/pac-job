@@ -1,0 +1,4 @@
+emoji==0.4.5
+pytz==2018.3
+more-itertools==4.1.0
+requests==2.18.4

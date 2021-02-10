@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Web007
+Resources:
+  Web007:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: Web007.web007_handler
+      MemorySize: 256
+      Runtime: python3.6
+      Role: arn:aws:iam::007575903924:role/cloud9-Job001-Job001Role-NQ27F73FEWTL
+      Timeout: 240

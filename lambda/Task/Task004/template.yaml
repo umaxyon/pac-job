@@ -1,0 +1,13 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Task004 stock_report_pages作成
+Resources:
+  Task004:
+    Type: AWS::Serverless::Function
+    Properties:
+      Handler: Task004.task004_handler
+      Runtime: python3.6
+      Role: arn:aws:iam::007575903924:role/cloud9-Job001-Job001Role-NQ27F73FEWTL
+      Timeout: 240
+      MemorySize: 256
+
